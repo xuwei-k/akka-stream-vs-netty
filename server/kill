@@ -1,0 +1,2 @@
+cat target/universal/stage/RUNNING_PID | xargs kill &&
+rm target/universal/stage/RUNNING_PID
