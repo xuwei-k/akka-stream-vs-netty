@@ -1,4 +1,4 @@
-scalaVersion := "2.11.2"
+scalaVersion := "2.11.4"
 
 scalacOptions ++= (
   "-deprecation" ::
@@ -33,6 +33,6 @@ def akkaHttpSettings = Seq(
 sys.props("akka-http") match {
   case "true" => akkaHttpSettings
   case "false" => Nil
-  case _ => sys.error("please specify akka-http=true or akka-http=false")
+  case _ => sys.error("please specify -Dakka-http=true or -Dakka-http=false")
 }
 
